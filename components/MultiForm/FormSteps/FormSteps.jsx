@@ -1,7 +1,11 @@
 import Styles from "./FormSteps.module.scss";
 
 const FormSteps = () => {
-  return <div>FormSteps</div>;
+  return (
+    <aside className={Styles.wrapper}>
+      <div className={Styles.formSteps}>FormSteps</div>
+    </aside>
+  );
 };
 
 export default FormSteps;
