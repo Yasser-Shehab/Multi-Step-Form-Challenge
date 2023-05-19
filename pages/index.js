@@ -3,7 +3,7 @@ import "../app/globals.scss";
 import MultiForm from "../components/MultiForm/index";
 
 const index = () => {
-  return <section className=""><MultiForm /></section>;
+  return <MultiForm />;
 };
 
 export default index;

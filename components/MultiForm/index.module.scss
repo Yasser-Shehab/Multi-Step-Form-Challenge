@@ -1,0 +1,17 @@
+@import "../../app/variables.scss";
+
+.form-container {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: $form-width;
+  max-width: $form-max-width;
+  max-height: $form-max-hight;
+  border-radius: $form-border-radius;
+  padding: $form-padding;
+  background-color: #fff;
+}
+
+form {
+    
+}
