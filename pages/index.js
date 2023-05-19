@@ -1,8 +1,9 @@
 import React from "react";
 import "../app/globals.scss";
+import MultiForm from "../components/MultiForm/index";
 
 const index = () => {
-  return <h1>Hello World</h1>;
+  return <section className=""><MultiForm /></section>;
 };
 
 export default index;
