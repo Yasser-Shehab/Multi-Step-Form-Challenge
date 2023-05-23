@@ -1,22 +1,15 @@
 import styles from "./FormSteps.module.scss";
+import Step from "../Step/Step";
+import { stepData } from "@/data/data";
 
 const FormSteps = () => {
   return (
     <aside className={styles.wrapper}>
       <div className={styles.formSteps}>
         <div className={styles["list-container"]}>
-          <li>
-            <div className={styles["circled-number"]}>1</div>
-          </li>
-          <li>
-            <div className={styles["circled-number"]}>2</div>
-          </li>
-          <li>
-            <div className={styles["circled-number"]}>3</div>
-          </li>
-          <li>
-            <div className={styles["circled-number"]}>4</div>
-          </li>
+          {stepData.map((item, index) => {
+            return <Step key={item.id} id={item.id} index={index} title={item.title} />;
+          })}
         </div>
       </div>
     </aside>

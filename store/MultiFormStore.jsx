@@ -7,7 +7,7 @@ const initialValues = [
 ];
 
 export const MultiFormStore = create((set) => ({
-  formStepNumber: 0,
+  formStepNumber: 3,
   formData: initialValues,
 
   setUserData: () => {

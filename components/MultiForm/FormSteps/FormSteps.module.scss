@@ -1,3 +1,5 @@
+@import "../../../app/variables.scss";
+
 .wrapper {
   height: 800px;
   width: 365px;
@@ -9,32 +11,22 @@
 }
 
 .formSteps {
-  padding: 4.2rem 5.4rem;
+  padding: 4.2rem 3.5rem;
 }
 
 .list-container {
   list-style: none;
   margin: 0;
+  width: 100%;
   list-style-position: inside;
 
   li {
-    position: relative;
+    display: flex;
     font-size: 1.6rem;
     margin-top: 4.2rem;
+
     &:first-child {
       margin-top: 0;
     }
   }
-}
-
-.circled-number {
-  color: #fff;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  font-size: 1.6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 2em;
-  height: 2em;
 }

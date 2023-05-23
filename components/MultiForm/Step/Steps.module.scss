@@ -1,0 +1,36 @@
+@import "../../../app/variables.scss";
+
+.circled-number {
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2em;
+  height: 2em;
+  transition: all 0.3s ease-in-out;
+}
+
+.active--step {
+  color: #000;
+  background-color: $active-step-color;
+}
+
+.step-info {
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.step-number {
+  font-size: 1.2rem;
+  font-weight: $light-weight;
+}
+
+.step-name {
+  font-size: 1.6rem;
+  font-weight: $medium-weight;
+}
