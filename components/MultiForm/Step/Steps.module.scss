@@ -10,7 +10,7 @@
   align-items: center;
   width: 2em;
   height: 2em;
-  transition: all 0.3s ease-in-out;
+  transition: color, background-color 0.3s ease-in-out;
 }
 
 .active--step {
@@ -28,9 +28,15 @@
 .step-number {
   font-size: 1.2rem;
   font-weight: $light-weight;
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 .step-name {
   font-size: 1.6rem;
   font-weight: $medium-weight;
+  @media (max-width: 767px) {
+    display: none;
+  }
 }

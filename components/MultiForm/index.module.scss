@@ -16,4 +16,9 @@
   display: grid;
   justify-items: space-between;
   grid-template-columns: 1fr 1.75fr;
+  @media (max-width: 767px) {
+    /* Your mobile styles here */
+    display: flex;
+    flex-direction: column;
+  }
 }
