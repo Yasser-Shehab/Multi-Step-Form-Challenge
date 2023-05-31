@@ -6,9 +6,23 @@ const initialValues = [
   { id: 2, addons: [] },
 ];
 
-export const MultiFormStore = create((set) => ({
-  formStepNumber: 1,
-  formData: initialValues,
+export const MultiFormStore = create((set, get) => ({
+  formStepNumber: 0,
+  personalInfo: {
+    id: 0,
+    name: "",
+    email: "",
+    phone: "",
+  },
+  planType: {
+    id: 1,
+    option: null,
+    planType: "monthly",
+  },
+  addons: {
+    id: 2,
+    addons: [],
+  },
 
   setUserData: () => {
     set({ formStepNumber: formStepNumber + 1 });

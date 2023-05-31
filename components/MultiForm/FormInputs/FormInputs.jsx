@@ -5,7 +5,7 @@ import PersonalInfo from "../PersonalInfo/PersonalInfo";
 import SelectPlan from "../SelectPlan/SelectPlan";
 import Addons from "../Addons/Addons";
 import Summary from "../Summary/Summary";
-import styles from "./FormInputs.module.scss"
+import styles from "./FormInputs.module.scss";
 
 const FormInputs = () => {
   const formStep = MultiFormStore((state) => state.formStepNumber);
@@ -29,7 +29,19 @@ const FormInputs = () => {
     }
   };
 
-  return <div className={styles["form-input-container"]}>{renderFormInput()}</div>;
+  const handleNext = () => {
+    
+  }
+
+  return (
+    <div className={styles["form-input-container"]}>
+      {renderFormInput()}
+      <div className={styles["nav-buttons"]}>
+        <p className={styles["back_btn"]}>Go Back</p>
+        <button className={styles["progress__button"]}>Next Step</button>
+      </div>
+    </div>
+  );
 };
 
 export default FormInputs;

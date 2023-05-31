@@ -1,4 +1,32 @@
 .form-input-container {
   justify-self: start;
-  margin-left: 1.5rem;
+  // margin-top: 5rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  // width: calc(90% - 6rem);
+  // width: 100%;
+  // padding: 5rem 13rem;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress__button {
+  background-color: #18498e;
+  color: #fff;
+  padding: 1.2rem 2rem;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.back_btn {
+  color: #95969d;
+  font-size: 1.5rem;
+  cursor: pointer;
+  &:hover {
+    color: #20344f;
+  }
 }
